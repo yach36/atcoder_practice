@@ -16,3 +16,5 @@ for i in range(1, N):
       if lst != nxt: # 昨日と今日の活動が同じでなければ
         dp[i][nxt] = max(dp[i][nxt], dp[i - 1][lst] + A[i][nxt])
 print(max(dp[N - 1]))
+
+# 結果：AC
